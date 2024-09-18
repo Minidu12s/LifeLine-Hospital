@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospital web application">
+    <link rel="stylesheet" href="./CSS/pharmacy.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png"  href="./Images/icon.png">
+    <title>Lifeline Hospital | Pharmacy</title>
+</head>
+<body>
+
+    <header>
+        <section class="logo-section">
+            <a href="index.html" class="logo-link">
+                <img src="./Images/logo.png" alt="Hospital Logo" class="logo">
+                <h2 class="logo-text">LIFELINE <br>HOSPITAL CARE</h2>
+            </a>
+        </section>
+
+        <section class="nav-section">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consultation.html">Consulting Reservation</a></li>
+                    <li><a href="pharmacy.html" class="active">Pharmacy</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <h1>Buy Medicine</h1>
+    <main>
+        <section class="pharmacy-form-section">
+            <form class="pharmacy-form" action="/submit-order" method="POST">
+                <label for="medicine">Select Medicine:</label>
+                <select id="medicine" name="medicine" required>
+                    <option value="" disabled selected>Select a medicine</option>
+                    <option value="paracetamol">Paracetamol</option>
+                    <option value="ibuprofen">Ibuprofen</option>
+                    <option value="amoxicillin">Amoxicillin</option>
+                    <option value="cough-syrup">Cough Syrup</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+
+                <label for="patient-email">Patient Email:</label>
+                <input type="email" id="patient-email" name="patient-email" required>
+
+                <label for="delivery-address">Delivery Address:</label>
+                <textarea id="delivery-address" name="delivery-address" rows="4" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <section class="footer-section about">
+                <h3>About Us</h3>
+                <p>Providing quality healthcare services with compassion and dedication. Your health is our priority.</p>
+            </section>
+            
+            <section class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consultation.html">Consulting Reservation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-section contact">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><i class="fa fa-map-marker"></i> 123 Health Street, Wellness City, HC 45678</p>
+                    <p><i class="fa fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@hospitalwebsite.com">info@hospitalwebsite.com</a></p>
+                </address>
+            </section>
+            
+            <section class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </section>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
