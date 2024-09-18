@@ -1,0 +1,81 @@
+
+/* Main content */
+main {
+    background: url(../Images/Pharmacy-background.png) fixed;
+    padding: 20px;
+}
+
+.pharmacy-form-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 20px;
+    background-color: #004d99;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.pharmacy-form {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pharmacy-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pharmacy-form input,
+.pharmacy-form select,
+.pharmacy-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pharmacy-form button {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pharmacy-form button:hover {
+    background-color: #003366;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .pharmacy-form {
+        padding: 15px;
+    }
+
+    .pharmacy-form button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pharmacy-form {
+        padding: 10px;
+    }
+
+    .pharmacy-form button {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}

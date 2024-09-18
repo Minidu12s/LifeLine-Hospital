@@ -1,0 +1,111 @@
+/* Services Page Styles */
+main {
+    padding: 20px;
+    background: url(../Images/Service-background.png) fixed;  
+}
+
+h1 {
+    margin-top: 20px;
+    background-color: #004d99;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service h2 {
+    margin: 15px 0;
+}
+
+.service p {
+    font-size: 1em;
+} 
+
+.para {
+    padding: 8px; /* Adjust the padding to your preference */
+    color: rgb(164, 210, 248);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    display: inline-block; /* Makes the background color fit tightly around the text */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.para1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px; /* Adjust the padding to your preference */
+    color: rgb(164, 210, 248);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    display: inline-block; /* Makes the background color fit tightly around the text */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Patient Registration Button */
+.registration-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #004d99;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #026cd6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
